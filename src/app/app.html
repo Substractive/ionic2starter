@@ -1,0 +1,24 @@
+<!--<button ion-button menuToggle>Toggle Menu</button> -->
+<!--<ion-menu [content]="content">
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Pages</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+       <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button> 
+    </ion-list>
+    <button (click)="openPage(loginPage[0])" >login module</button>
+  </ion-content>
+</ion-menu> -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<!--<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="Home2" tabIcon="home">HOME</ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle">Nesto</ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts">Drugo</ion-tab> 
+</ion-tabs> -->
