@@ -1,24 +1,39 @@
 
-<ion-header>
+<!-- <ion-header>
    <ion-title style="text-align:center;">
       {{'Diet' | translate}}
     </ion-title>
-  <!-- <ion-navbar>
+   <ion-navbar>
    
      <button ion-button menuToggle><ion-icon name="home"></ion-icon></button> 
-  </ion-navbar> -->
-</ion-header>
+  </ion-navbar> 
+</ion-header>-->
 
 <ion-content padding class="template">
-  <div class="div-wrapper">
-  <div >
+  <div class="div-wrapper" >
+  <div class="mainLogo">
     <img class="app-logo" src="/assets/icon/favicon.ico"/>
   </div>
-<div>
-  <button (click)="openPage(pages[0])" class="skiploginbtn">Skip login</button>
+<div class="loginWrapper">
+  <button ion-button block (click)="openPage(pages[0])" class="skiploginbtn">Skip login</button>
+  <button ion-button block (click)="openPage(pages[0])" class="loginbtn">Login</button>
+  <button ion-button block (click)="openPage(pages[0])" class="registerbtn">Register</button>
+  <button ion-button (click)="openPage(pages[0])" class="facebookLogin">Facebook login</button>
+  <button ion-button (click)="openPage(pages[0])" class="googleLogin">Google login</button>
+</div>
+<div class="socialWrapper">
+  <h5>{{'Connect with us' | translate }}</h5>
+  <div>
+    <img class="facebookSocial" src="/assets/icon/facebook.png"/>
+     <img class="instagramSocial" src="/assets/icon/instagram.png"/>
+    <img class="youtubeSocial" src="/assets/icon/youtube.png"/>
+  <!--  <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon> -->
+  </div>
 </div>
   </div>
-  <div> 
-     {{ "Hi" | translate}}
-  </div> 
+<ion-toolbar position="bottom">
+  <p>{{'Team' | translate}}</p>
+</ion-toolbar>
 </ion-content>

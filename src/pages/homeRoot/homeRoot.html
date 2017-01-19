@@ -1,11 +1,10 @@
+<!-- SIDEBAR NAVIGATION  -->
 <ion-menu [content]="content">
-  
   <ion-header>
     <ion-toolbar>
       <ion-title>Pages</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <ion-content>
     <ion-list>
        <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
@@ -16,5 +15,16 @@
   </ion-content>
 </ion-menu> 
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
-This is home component
-{{'glupost' | translate}}
+<!-- SIDEBAR NAVIGATION END  -->
+<ion-header>
+    <ion-toolbar>
+      <ion-title>{{'glupost' | translate}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<!-- TAB NAVIGATION -->
+<ion-tabs #mainTabs selectedIndex="{{activeTab}}" >
+  <ion-tab [root]="tab1Root" tabTitle="Lifestyle" tabIcon="home">{{'home' | translate}}</ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Recipes" tabIcon="information-circle">Nesto</ion-tab>
+   <ion-tab [root]="tab3Root" tabTitle="Products" tabIcon="contacts">Drugo</ion-tab>  
+</ion-tabs>
+<!-- TAB NAVIGATION END -->

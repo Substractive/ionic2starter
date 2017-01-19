@@ -1,18 +1,87 @@
 page-home {
+  .screenWrapper{
+    background-repeat: no-repeat;
+    background-image:url('/assets/icon/favicon.ico');
+  }
 .div-wrapper{
   background-color:white;
-  opacity:0.7;
+  //opacity:0.7;
+}
+.mainLogo{
+  margin-top:10%;
+}
+.loginWrapper{
+  margin-top:15%;
 }
 .skiploginbtn {
-color: blue;
-  background-color:red;
+  box-shadow: none;
+  color:green;
+  background-color:#ecf0f1;
 }
 .app-logo{
   margin:0 auto;
   display: block;
 }
 .template{
-  background-color:#cdeb8e;
+  background-color:white;
+}
+.loginbtn{
+  background-color:#16a085;
+}
+.registerbtn{
+  background-color:#0277BD; 
+}
+.facebookLogin{
+  margin:0 auto;
+  width:49.4%;
+  border:none;
+  background-color: #3b5998;
+}
+.facebookSocial
+{
+  height:5%;
+  width: 10%;
+  //background-image:url("../assets/icon/facebook.png");
+}
+.googleLogin{
+  background-color:#d34836;
+  margin:0 auto;
+  width: 49.4%;
+  border:none;
+}
+.socialWrapper{
+  margin:0 auto;
+  display: block;
+  text-align: center;
+  margin-top:35%;
+}
+.youtubeSocial
+{
+  width:14%;
+  
+}
+.instagramSocial{
+  width:10%;
+  
+}
+.facebookSocial{
+  width:10%;
+  
+}
+.fb-connect{
+color:#3b5998;
+width:10%;
+font-size:30px;
+}
+.tw-connect{
+color: blue;
+width:10%;
+font-size:30px;
+}
+.in-connect{
+color:orange;
+width:10%;
+font-size:30px;
 }
 }
 

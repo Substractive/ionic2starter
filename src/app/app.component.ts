@@ -14,9 +14,9 @@ import { TranslateLoader, TranslateStaticLoader,TranslatePipe,TranslateService }
   providers: [SpinnerService]
 })
 export class MyApp {
-  rootPage = LoginPage;
-  tab1Root: any = LoginPage;
-  tab2Root: any = HomeRoot;
+  rootPage = HomeRoot;
+  //tab1Root: any = LoginPage;
+  //tab2Root: any = HomeRoot;
   pages: Array<{title: string, component: any}>; // nav components
   //loginPage : Array <{title:string ,component: any}>;
 
